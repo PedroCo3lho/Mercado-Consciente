@@ -18,6 +18,12 @@ export default function Home() {
     }
   };
 
+  const handleKeyDown = (event: any) => {
+    if (event.key === 'Enter') {
+      handleCalcular(); // Chama a função de cálculo ao pressionar Enter
+    }
+  };
+
   return (
     <div className="flex flex-col items-center justify-center min-h-screen bg-gray-50">
       <main className="text-center">
@@ -45,6 +51,7 @@ export default function Home() {
             placeholder="Número de pessoas"
             value={inputValue}
             onChange={(e) => setInputValue(e.target.value)}
+            onKeyDown={handleKeyDown} // Substitui onKeyPress por onKeyDown
             className="input input-bordered w-full mb-4 text-center"
           />
           <button
@@ -57,8 +64,11 @@ export default function Home() {
       </main>
 
       {/* Rodapé */}
-      <footer className="footer footer-center text-gray-500 mt-10">
-        <p>Villa Lobos © {new Date().getFullYear()} - 3º ano B</p>
+      <footer className="footer footer-center text-gray-500 mt-8">
+        <div>
+          <p>Villa Lobos © 2024 - 3º ano A</p>
+          <p>Benício - Gael - Júlia de Moraes - Luis Guilherme - Rafael - Rebeca</p>
+        </div>
       </footer>
     </div>
   );

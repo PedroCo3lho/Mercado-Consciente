@@ -212,7 +212,7 @@ export default function Produto() {
           "created_at": "2024-10-11 13:10:47.004516+00",
           "nome": " Pão Francês",
           "quantidade": 7,
-          "imagem": "https://static.paodeacucar.com/img/uploads/1/354/607354.png",
+          "imagem": "https://imgs.search.brave.com/6mmpxNoX3IHe217rZdQFn7TYYvWZNdW8UvvzJyFHo_s/rs:fit:860:0:0:0/g:ce/aHR0cHM6Ly9jb3N0/YWxhdm9zLmNvbS5i/ci93cC1jb250ZW50/L3VwbG9hZHMvMjAx/Ny8xMS9wYW9fZnJh/bmNlc19uYV9jZXN0/YS5qcGc",
           "medida": "Unidade",
           "recorrencia": "Semanal"
         },
